@@ -1,0 +1,117 @@
+.city-marker {
+  background-color: var(--primary);
+  padding: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 3px 3px rgb(0 0 0 / 27%);
+}
+
+#zone-marker {
+  padding: 6px 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: var(--zone-marker-color);
+}
+
+#zone-marker:before {
+  content: "";
+  position: absolute;
+  right: 45%;
+  top: 32px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--zone-marker-color);
+}
+
+.mapboxgl-ctrl-geocoder {
+  background-color: #545559 !important;
+  border-radius: 16px !important;
+
+  .suggestions {
+    background: transparent !important;
+  }
+}
+
+.mapboxgl-control-container {
+  display: none;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+  font: caption !important;
+  color: white !important;
+  outline: none !important;
+}
+
+.mapboxgl-ctrl-geocoder--button {
+  background: #545559 !important;
+}
+
+.mapboxgl-ctrl-geocoder--suggestion-title {
+  color: #F0F2F5 !important;
+}
+
+.mapboxgl-ctrl-geocoder--suggestion-address {
+  color: rgba(123, 124, 128, 1) !important;
+}
+
+.mapboxgl-ctrl-geocoder .suggestions > .active > a,
+.mapboxgl-ctrl-geocoder .suggestions > li > a:hover {
+  background-color: #4040408c !important;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+  display: none !important;
+}
+
+//.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+//  margin: 10px 152px 0 0 !important;
+//}
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-group button {
+  display: none !important;
+}
+
+.mapboxgl-user-location-show-heading .mapboxgl-user-location-heading:after, .mapboxgl-user-location-show-heading .mapboxgl-user-location-heading:before {
+  border-bottom: 7.5px solid #ff3f3f !important;
+}
+
+.mapboxgl-user-location-show-heading .mapboxgl-user-location-heading:before {
+  border-left: 6px solid transparent !important;
+  transform: translateY(-24px) skewY(-20deg) !important;
+}
+
+.mapboxgl-user-location-show-heading .mapboxgl-user-location-heading:after {
+  border-right: 6px solid transparent !important;
+  transform: translate(6px, -24px) skewY(20deg) !important;
+}
+
+.mapboxgl-user-location-dot, .mapboxgl-user-location-dot:before {
+  background-color: #ff3f3f !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.mapboxgl-user-location-dot:after {
+  border: 2px solid #fff;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.icon-fuel, .icon-fuel-outline {
+  font-size: 22px;
+  margin-top: 7px;
+  margin-left: 3px;
+  color: black;
+}
